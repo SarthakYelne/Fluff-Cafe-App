@@ -1,0 +1,19 @@
+.loading-indicator {
+    display: -ms-inline-grid;
+    width: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+    z-index: 1;
+}
+
+.loading-indicator img {
+    width: 60px;
+    background-color: #f9f9fb31;
+}
+
+.ui-view-placeholder {
+    margin-inline: 40px;
+}

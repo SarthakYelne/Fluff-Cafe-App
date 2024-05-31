@@ -1,0 +1,54 @@
+[
+  {
+    "id": 81,
+    "name": "Cookie Dough",
+    "short_name": "CD",
+    "special_instructions": "Ready, Set Bake! Dive into our ready-to-eat cookie dough for instant seeet satisfaction."
+  },
+  {
+    "id": 82,
+    "name": "Shaved Ice",
+    "short_name": "SI",
+    "special_instructions": "Flavors that Freeze and Please! Experience a frosty delight with every spoonful of our Shaved Ice."
+  },
+  {
+    "id": 83,
+    "name": "Specialty Coffee",
+    "short_name": "SC",
+    "special_instructions": "Sip the Extraordinary! Experience the unique blends of our Speciality Coffee."
+  },
+  {
+    "id": 84,
+    "name": "Cookie Dough Shakes",
+    "short_name": "CDS",
+    "special_instructions": "Blend, Sip, Love! Experience the sweet whirl of our Cookie Dough Shake."
+  },
+  {
+    "id": 85,
+    "name": "Breakfast",
+    "short_name": "B",
+    "special_instructions": "Start Your Day the Gourmet Way! Enjoy our delicious, carefully prepared Breakfast."
+  },
+  {
+    "id": 86,
+    "name": "Croissants",
+    "short_name": "C",
+    "special_instructions": "Flaky Perfection in Every Bite! Savor the buttery layers of our freshlyy baked Croissants."
+  },
+  {
+    "id": 87,
+    "name": "Sandwiches",
+    "short_name": "S",
+    "special_instructions": "A Bite Above! Elevate your lunch with our expertly assembled flavor-packed Sandwiches."
+  },
+  { "id": 88, 
+    "name": "Coffee", 
+    "short_name": "CO", 
+    "special_instructions": "Wake Up and Smell the Brew! Enjoy our rich, aromatic coffee every morning."
+  },
+  { "id": 89, 
+    "name": "Specials", 
+    "short_name": "SP", 
+    "special_instructions": "Savor the Unexpected: Our Daily Specials Await!"
+  }
+]
