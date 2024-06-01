@@ -16,7 +16,7 @@ function routeConfig ($stateProvider) {
       templateUrl: 'src/public/public.html'
     })
     .state('public.home', {
-      url: '/',
+      url: '',
       templateUrl: 'src/public/home/home.html'
     })
     .state('public.menu', {
