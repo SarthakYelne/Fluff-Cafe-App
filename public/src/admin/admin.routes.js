@@ -20,6 +20,8 @@
       .state("admin.auth", {
         url: "",
         templateUrl: "src/admin/admin-auth/admin-auth.html",
+        controller: "AdminAuthController",
+        controllerAs: "adminAuth",
       })
       .state("admin.login", {
         url: "/login",
@@ -31,6 +33,44 @@
         params: {
           toParams: null,
           toState: null,
+        },
+      })
+      .state("admin.auth.category", {
+        url: "/category/{categoryId}",
+        templateUrl: "src/admin/category/category-items.html",
+        controller: "CategoryItemsController",
+        controllerAs: "categoryItemsCtrl",
+        resolve: {
+          category: [
+            "$stateParams",
+            "MenuService",
+            function ($stateParams, MenuService) {
+              return MenuService.getCategory($stateParams.categoryId);
+            },
+          ],
+          menuItems: [
+            "$stateParams",
+            "MenuService",
+            function ($stateParams, MenuService) {
+              return MenuService.getMenuItems($stateParams.categoryId);
+            },
+          ],
+        },
+      })
+
+      .state("admin.auth.category.menuitem", {
+        url: "/menuitem/{menuItemId}",
+        templateUrl: "src/admin/menu-item/menu-item-edit.html",
+        controller: "MenuItemEditController",
+        controllerAs: "menuItemEditCtrl",
+        resolve: {
+          menuItem: [
+            "$stateParams",
+            "MenuService",
+            function ($stateParams, MenuService) {
+              return MenuService.getMenuItem($stateParams.menuItemId);
+            },
+          ],
         },
       });
   }

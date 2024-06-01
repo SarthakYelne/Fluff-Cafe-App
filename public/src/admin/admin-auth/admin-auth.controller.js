@@ -19,14 +19,12 @@
         return;
       }
 
-      LoginService.logout(CurrentUserService.getAccessToken())
-        .then(function () {
+      LoginService.logout(CurrentUserService.getAccessToken()).then(
+        function () {
           CurrentUserService.saveToken("", "");
           $location.path("/");
-        })
-        .catch(function (error) {
-          console.error("Logout failed:", error);
-        });
+        }
+      );
     };
   }
 })();
