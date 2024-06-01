@@ -1,8 +1,44 @@
-<div class="image-container">
-  <link rel="stylesheet" href="/public/css/about.css" />
-  <br />
-  <img src="./images/abouts1.jpeg" alt="images" width="80%" /><br />
-  <img src="./images/abouts2.jpeg" alt="images" width="80%" /><br />
-  <img src="./images/abouts3.jpeg" alt="images" width="80%" />
-  <br />
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Abouts Page / */
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    max-width: 60%;
+    height: auto;
+    margin: 30px 0px 2px 0px;
+  }
+  
+  .image-container img:last-child {
+    margin-bottom: 0;
+  }
+  /* about page end //// */
+  
+  
+  </style>
+</head>
+<body>
+  
+  <div id="about" class="image-container" src="/public/css/about.css">
+    <br />
+    <img src="./images/abouts1.jpeg" alt="images" width="80%" /><br />
+    <img src="./images/abouts2.jpeg" alt="images" width="80%" /><br />
+    <img src="./images/abouts3.jpeg" alt="images" width="80%" />
+    <br />
+  </div>
+</body>
+</html>
