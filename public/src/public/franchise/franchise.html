@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <title>Franchise Outlet Information</title> -->
+<!-- 
     <style>
       /* Flexbox Container */
       .d-flex {
@@ -115,10 +116,31 @@
         }
       }
     </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const text =
+    "Welcome to Our Franchise Outlet! Join Us for a Prosperous Future.";
+  const typingElement = document.querySelector(".typing");
+
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      typingElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeText, 300); // Adjust typing speed here
+    }
+  }
+
+  typeText();
+});
+
+    </script> -->
   </head>
-  <body id="franchise">
-    <div class="typing-container d-flex align-items-center text-center">
-      <div class="div">What’s the Vision?</div>
+  <body >
+    <div style="font-family: Arial, sans-serif; text-align: center; justify-content: center; align-items: center;">
+      <div style="font-weight: 300;" class="div"><br>What’s the Vision?</div>
       <div class="div2">Fresh & Simple <br /></div>
       <div class="div3">
         Setting the new standard while seamlessly synthesizing the familiar and
