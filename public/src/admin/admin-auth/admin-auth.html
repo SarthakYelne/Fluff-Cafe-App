@@ -1,6 +1,6 @@
 <div class="container" ng-controller="AdminAuthController as adminAuth">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-1">
       <h1>
         Administrator Dashboard
         <button class="btn btn-default" ng-click="adminAuth.logout()">Logout</button>
@@ -9,8 +9,8 @@
   </div>
 
   <div class="col-md-3">
-    <h3>Categories</h3>
-    <!-- <category-list></category-list> -->
+    <!-- <h3>Categories</h3> -->
+    <category-list></category-list>
   </div>
   <div class="col-md-9">
     <ui-view>
