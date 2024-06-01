@@ -19,14 +19,15 @@ body {
 #logo-img {
   background: url("../images/restaurant-logo_large.png") no-repeat;
   width: 80px;
-  height: 100px;
-  margin: 15px;
+  height: 99px;
+  margin: 17px;
 }
 
 #cafe-name {
   background: url("../images/Name.png") no-repeat;
-  width: 165px;
+  width: 170px;
   height: 102px;
+  margin-top: 10px;
 }
 
 .navbar-brand {
@@ -45,7 +46,7 @@ body {
 
 .navbar-brand a:hover,
 .navbar-brand a:focus {
-  box-shadow: 0 1px 5px 1px #cccccc;
+  /* box-shadow: 0 1px 5px 1px #070707; */
   transition: all 0.2s;
 }
 
@@ -140,7 +141,7 @@ body {
 }
 
 a[ui-sref="admin.auth"] {
-  color: #fff;
+  color: #ffffff;
 }
 
 /* END FOOTER */
@@ -150,16 +151,16 @@ a[ui-sref="admin.auth"] {
   /* Header */
   #logo-img {
     background: url("../images/restaurant-logo_medium.png") no-repeat;
-    width: 65;
-    height: 80;
+    width: 100%;
+    height: 100%;
     margin: 20px 2px 0px 0px;
   }
 
   /* Header */
   #cafe-name {
     background: url("../images/Name-medium.png") no-repeat;
-    width: 144;
-    height: 88;
+    width: 100%;
+    height: 100%;
     margin: 5px 0px 3px 0px;
   }
 
@@ -169,15 +170,13 @@ a[ui-sref="admin.auth"] {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   
-  /* Header */
-
+  
   #logo-img {
     background: url("../images/restaurant-logo_small.png") no-repeat;
-    width: 40px;
+    width: 60px;
     height: 50px;
-    margin: 15px 16px 0px 0px;
+    margin: 1500px 166px 0px 0px;
   }
-
   /* Header */
   #cafe-name {
     background: url("../images/Name-small.png") no-repeat;
@@ -186,20 +185,21 @@ a[ui-sref="admin.auth"] {
   }
 
   .navbar-brand {
-    padding-top: 5px;
-    height: 40px;
+    padding: 0px;
+    margin: 0px 0px 20px 30px;
+    height: 50px;
   }
 
   .navbar-brand h1 {
     /* Restaurant name */
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 10vw;
     /* 1vw = 1% of viewport width */
   }
 
   #collapsable-nav a {
     /* Collapsed nav menu text */
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   #collapsable-nav a span {
@@ -225,21 +225,6 @@ a[ui-sref="admin.auth"] {
     text-transform: uppercase;
   }
 
-  /* 
-  #logo-img {
-    background: url("../images/restaurant-logo_small.png") no-repeat;
-    width: 40px;
-    height: 50px;
-    margin: 15px 16px 0px 0px;
-  } */
-
-  /* #cafe-name {
-    background: url("../images/Name-medium.png") no-repeat;
-    width: 110px;
-    height: 68px;
-  } */ 
-
-  /* End Header */
 
   /* Footer */
   .panel-footer section {
