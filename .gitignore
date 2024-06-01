@@ -1,4 +1,4 @@
-node_modules
 .env
-public/src/admin/Admin-Firebase-api
 .firebase
+node_modules
+public/src/admin/Admin-Firebase-api
