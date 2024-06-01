@@ -29,7 +29,7 @@
 img.image {
   position: absolute;
   top: 0;
-  left : 0;
+  left: 0;
   opacity: 0;
 }
 
@@ -43,7 +43,9 @@ img.image {
   pointer-events: all;
 }
 
-#menu-tile, #specials-tile, #map-tile {
+#menu-tile,
+#specials-tile,
+#map-tile {
   height: 290px;
   width: 100%;
   margin-bottom: 30px;
@@ -53,21 +55,25 @@ img.image {
   overflow: hidden;
   border-radius: 15px;
 }
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-  box-shadow:0px 2px 5px 1px #ffffff;
+#menu-tile:hover,
+#specials-tile:hover,
+#map-tile:hover {
+  box-shadow: 0px 2px 5px 1px #ffffff;
 }
 #menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
+  background: url("../images/menu-tile.jpg") no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url('../images/specials-tile.jpg') no-repeat;
+  background: url("../images/specials-tile.jpg") no-repeat;
   background-position: center;
 }
 #map-tile {
   background: white;
 }
-#menu-tile span, #specials-tile span, #map-tile span {
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -75,10 +81,10 @@ img.image {
   text-align: center;
   font-size: 1.5em;
   text-transform: uppercase;
-  text-decoration: double ;
+  text-decoration: double;
   background-color: #000000;
   color: #ffffff;
-  opacity: .8;
+  opacity: 0.8;
 }
 /* END HOME PAGE */
 
@@ -101,7 +107,7 @@ img.image {
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
 }
 .category-tile:hover {
   box-shadow: 0 1px 5px 2px #ffffff;
@@ -126,7 +132,7 @@ img.image {
   margin-right: -15px;
 }
 .menu-item-tile .menu-item-price span {
-  font-size: .6em;
+  font-size: 0.6em;
 }
 .menu-item-photo {
   position: relative;
@@ -154,46 +160,45 @@ h3.menu-item-title {
   margin: 0 0 10px;
 }
 .menu-item-details {
-  font-size: .9em;
+  font-size: 0.9em;
   font-style: italic;
 }
 /* END SINGLE CATEGORY PAGE */
 
-
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container #fluff {
-      background: url('../images/fluff_1200-1.jpg') no-repeat;
-      background-position: center;
-      background-size: cover; /* Ensure background image covers the container */
-      position: relative;
-      margin: 10px auto 25px;
-      display: flex;
-      flex-direction: column;
-    }
+    background: url("../images/fluff_1200-1.jpg") no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensure background image covers the container */
+    position: relative;
+    margin: 10px auto 25px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .container #fluff {
-    background: url('../images/fluff_991-1.jpg') no-repeat;
+    background: url("../images/fluff_991-1.jpg") no-repeat;
     background-position: center;
-      background-size: cover; /* Ensure background image covers the container */
-      position: relative;
-      margin: 10px auto 25px;
-      display: flex;
-      flex-direction: column;
+    background-size: cover; /* Ensure background image covers the container */
+    position: relative;
+    margin: 10px auto 25px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .container #fluff {
-    background: url('../images#fluff_768.jpg') no-repeat;
+    background: url("../images#fluff_768.jpg") no-repeat;
     background-position: center;
-      background-size: cover; /* Ensure background image covers the container */
-      position: relative;
-      margin: 10px auto 25px;
-      display: flex;
-      flex-direction: column;
+    background-size: cover; /* Ensure background image covers the container */
+    position: relative;
+    margin: 10px auto 25px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -202,7 +207,8 @@ h3.menu-item-title {
     margin-top: 30px;
     padding: 0;
   }
-  #menu-tile, #specials-tile {
+  #menu-tile,
+  #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -220,7 +226,8 @@ h3.menu-item-title {
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Home page */
-  #menu-tile, #specials-tile {
+  #menu-tile,
+  #specials-tile {
     width: 280px;
     margin: 0 auto 15px;
   }

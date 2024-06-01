@@ -1,163 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fluff Artisan Cafè</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fluff Artisan Cafè</title>
-  <link rel="icon" href="images/logo.png" type="image/icon type">
-  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/restaurant.css">
-  <link rel="stylesheet" href="css/common.css">
-</head>
+  <body ng-app="restaurant" ng-strict-di>
+    <!-- Fixed position loading indicator -->
+    <loading class="loading-indicator"></loading>
 
-<body ng-app="restaurant" ng-strict-di>
-
-  <!-- Fixed position loading indicator -->
-  <loading class="loading-indicator"></loading>
-
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image" class="img-responsive"></div>
-          </a>
-
-          <div class="navbar-brand" class="pull-left visible-md visible-lg">
-            <a href="index.html">
-              <div id="cafe-name" alt="Fluff Cafe"></div>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img" alt="Logo image" class="img-responsive"></div>
             </a>
+
+            <div class="navbar-brand" class="pull-left visible-md visible-lg">
+              <a href="index.html">
+                <div id="cafe-name" alt="Fluff Cafe"></div>
+              </a>
+            </div>
+
+            <button
+              id="navbarToggle"
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
 
-          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li id="navHomeButton" class="visible-xs active">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span> Home</a
+                >
+              </li>
+              <li id="navMenuButton">
+                <a ui-sref="public.menu">
+                  <span class="glyphicon glyphicon-cutlery"></span
+                  ><br class="hidden-xs" />
+                  Menu</a
+                >
+              </li>
+              <li>
+                <a ui-sref="public.about">
+                  <span class="glyphicon glyphicon-info-sign"></span
+                  ><br class="hidden-xs" />
+                  About Us</a
+                >
+              </li>
+              <li>
+                <a ui-sref="public.franchise">
+                  <span class="glyphicon glyphicon-certificate"></span
+                  ><br class="hidden-xs" />
+                  Franchise</a
+                >
+              </li>
+              <li id="phone" class="hidden-xs">
+                <a
+                  href="https://www.zomato.com/nagpur/fluff-artisan-cafe-bajaj-nagar"
+                >
+                  <span class="text-center">Order Now!!</span></a
+                >
+                <div>*We Also Deliver</div>
+              </li>
+            </ul>
+            <!-- #nav-list -->
+          </div>
+          <!-- .collapse .navbar-collapse -->
         </div>
+        <!-- .container -->
+      </nav>
+      <!-- #header-nav -->
+    </header>
 
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
-              <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span> Home</a>
-            </li>
-            <li id="navMenuButton">
-              <a ui-sref="public.menu">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-            <li>
-              <a ui-sref="public.about">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About Us</a>
-            </li>
-            <li>
-              <a ui-sref="public.franchise">
-                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Franchise</a>
-            </li>
-            <li id="phone" class="hidden-xs">
-              <a href="https://www.zomato.com/nagpur/fluff-artisan-cafe-bajaj-nagar">
-                <span class="text-center">Order Now!!</span></a>
-              <div>*We Also Deliver</div>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
-  </header>
-
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="https://www.zomato.com/nagpur/fluff-artisan-cafe-bajaj-nagar">
-      <span class="glyphicon glyphicon-earphone"></span>
-      Order Now!!
-    </a>
-  </div>
-  <div id="xs-deliver" class="text-center visible-xs">*We Also Deliver</div>
-
-  <ui-view>
-    <div class="text-center initial-loading">
-      <h2>Loading Site...</h2>
+    <div id="call-btn" class="visible-xs">
+      <a
+        class="btn"
+        href="https://www.zomato.com/nagpur/fluff-artisan-cafe-bajaj-nagar"
+      >
+        <span class="glyphicon glyphicon-earphone"></span>
+        Order Now!!
+      </a>
     </div>
-  </ui-view>
+    <div id="xs-deliver" class="text-center visible-xs">*We Also Deliver</div>
 
-  <footer class="panel-footer">
-    <div class="container text-center">
-      <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Hours:</span><br>
-          Mon - Sun: 08:00am - 11:00pm
-          <hr class="visible-xs">
-        </section>
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br>
-          Block 17, Fluff Artisan Cafe,<br>
-          JP Chambers, Wing 1, S Ambazari Rd <br>
-          Mate Square, Madhav Nagar, <br>
-          Nagpur, Maharashtra 440010<br>
-          <p> *Delivery area within Nagpur,<br>
-            Can Order from Zomato | Swiggy</p>
-          <hr class="visible-xs">
-        </section>
-        <section id="testimonials" class="col-sm-4">
-          <p>"The best Cafe in town I've been to! And that's saying a lot!"</p>
-          <p>"Amazing food! Speciality Coffee, Cookie Dough and Shaved Ice"</p>
-        </section>
+    <ui-view>
+      <div class="text-center initial-loading">
+        <h2>Loading Site...</h2>
       </div>
-      <div class="text-center">
-        &copy; Copyright Fluff Artisan Cafe 2020 |
-        <a ui-sref="admin.auth">Admin</a>
+    </ui-view>
+
+    <footer class="panel-footer">
+      <div class="container text-center">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br />
+            Mon - Sun: 08:00am - 11:00pm
+            <hr class="visible-xs" />
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br />
+            Block 17, Fluff Artisan Cafe,<br />
+            JP Chambers, Wing 1, S Ambazari Rd <br />
+            Mate Square, Madhav Nagar, <br />
+            Nagpur, Maharashtra 440010<br />
+            <p>
+              *Delivery area within Nagpur,<br />
+              Can Order from Zomato | Swiggy
+            </p>
+            <hr class="visible-xs" />
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>
+              "The best Cafe in town I've been to! And that's saying a lot!"
+            </p>
+            <p>
+              "Amazing food! Speciality Coffee, Cookie Dough and Shaved Ice"
+            </p>
+          </section>
+        </div>
+        <div class="text-center">
+          &copy; Copyright Fluff Artisan Cafe 2020 |
+          <a ui-sref="admin.auth">Admin</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Libs -->
-  <script src="lib/jquery-2.1.4.min.js"></script>
-  <script src="lib/bootstrap.min.js"></script>
-  <script src="lib/angular.min.js"></script>
-  <script src="lib/angular-ui-router.min.js"></script>
+    <!-- Libs -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
 
-  <!-- Main Restaurant Module -->
-  <script src="src/restaurant.module.js"></script>
+    <!-- Main Restaurant Module -->
+    <script src="src/restaurant.module.js"></script>
 
-  <!-- Common Module -->
-  <script src="src/common/common.module.js"></script>
-  <script src="src/common/loading/loading.component.js"></script>
-  <script src="src/common/loading/loading.interceptor.js"></script>
-  <script src="src/common/menu.service.js"></script>
+    <!-- Common Module -->
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/loading/loading.component.js"></script>
+    <script src="src/common/loading/loading.interceptor.js"></script>
+    <script src="src/common/menu.service.js"></script>
 
-  <!-- Public Module -->
-  <script src="src/public/public.module.js"></script>
-  <script src="src/public/public.routes.js"></script>
-  <script src="src/public/menu/menu.controller.js"></script>
-  <script src="src/public/menu-category/menu-category.component.js"></script>
-  <script src="src/public/menu-items/menu-items.controller.js"></script>
-  <script src="src/public/menu-item/menu-item.component.js"></script>
+    <!-- Public Module -->
+    <script src="src/public/public.module.js"></script>
+    <script src="src/public/public.routes.js"></script>
+    <script src="src/public/menu/menu.controller.js"></script>
+    <script src="src/public/menu-category/menu-category.component.js"></script>
+    <script src="src/public/menu-items/menu-items.controller.js"></script>
+    <script src="src/public/menu-item/menu-item.component.js"></script>
 
-  <!-- ADMIN SITE -->
-  <script src="src/admin/admin.module.js"></script>
-  <script src="src/admin/admin.routes.js"></script>
-  <script src="src/admin/admin-auth/admin-auth.controller.js"></script>
-  <script src="src/admin/services/login.service.js"></script>
-  <script src="src/admin/services/current-user.service.js"></script>
-  <script src="src/admin/services/authredirector.service.js"></script>
-  <script src="src/admin/auth.interceptor.js"></script>
-  <script src="src/admin/login/login.controller.js"></script>
-
-  <!-- <script src="src/admin/admin.module.js"></script>
+    <!-- ADMIN SITE -->
+    <script src="src/admin/admin.module.js"></script>
     <script src="src/admin/admin.routes.js"></script>
     <script src="src/admin/admin-auth/admin-auth.controller.js"></script>
     <script src="src/admin/services/login.service.js"></script>
     <script src="src/admin/services/current-user.service.js"></script>
     <script src="src/admin/services/authredirector.service.js"></script>
     <script src="src/admin/auth.interceptor.js"></script>
-    <script src="src/admin/login/login.controller.js"></script> -->
-
-
-</body>
-
+    <script src="src/admin/login/login.controller.js"></script>
+  </body>
 </html>

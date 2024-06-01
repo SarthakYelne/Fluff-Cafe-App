@@ -41,14 +41,16 @@
     "short_name": "S",
     "special_instructions": "A Bite Above! Elevate your lunch with our expertly assembled flavor-packed Sandwiches."
   },
-  { "id": 88, 
-    "name": "Coffee", 
-    "short_name": "CO", 
+  {
+    "id": 88,
+    "name": "Coffee",
+    "short_name": "CO",
     "special_instructions": "Wake Up and Smell the Brew! Enjoy our rich, aromatic coffee every morning."
   },
-  { "id": 89, 
-    "name": "Specials", 
-    "short_name": "SP", 
+  {
+    "id": 89,
+    "name": "Specials",
+    "short_name": "SP",
     "special_instructions": "Savor the Unexpected: Our Daily Specials Await!"
   }
 ]

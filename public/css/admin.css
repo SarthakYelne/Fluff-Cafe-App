@@ -1,14 +1,14 @@
 .login {
-    margin: 0 auto;
-    padding: 20px;
-    color: #f2dde4;
+  margin: 0 auto;
+  padding: 20px;
+  color: #f2dde4;
 }
 .login button {
   background-color: #38963be7;
 }
 .login div:first-of-type {
-    width: 290px;
-    margin: 0 auto;
+  width: 290px;
+  margin: 0 auto;
 }
 
 .categories a {
@@ -18,7 +18,7 @@
   padding: 5px;
 }
 .categories .selected {
-    background-color: #65ed16;
+  background-color: #65ed16;
 }
 
 .admin-img {
@@ -60,14 +60,14 @@
 .admin-item-list button.btn.btn-primary {
   background-color: #f6b319;
   border-color: #f6b319;
-  color: #3F0C1F;
+  color: #3f0c1f;
 }
 .admin-item-price {
-    width: 250px;
+  width: 250px;
 }
-.admin-item-price input[type='number'] {
-    height: 36px;
+.admin-item-price input[type="number"] {
+  height: 36px;
 }
 .admin-item-portion input {
-    width: 60px;
+  width: 60px;
 }
